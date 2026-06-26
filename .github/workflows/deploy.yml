@@ -37,8 +37,8 @@ jobs:
         working-directory: frontend
         run: npm run build
         env:
-          VITE_SUPABASE_URL: placeholder
-          VITE_SUPABASE_ANON_KEY: placeholder
+          VITE_SUPABASE_URL: https://placeholder.supabase.co
+          VITE_SUPABASE_ANON_KEY: placeholder_anon_key
 
       - uses: actions/configure-pages@v4
 
