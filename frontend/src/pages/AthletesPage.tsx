@@ -118,8 +118,6 @@ export default function AthletesPage() {
 }
 
 function AthleteListRow({ athlete }: { athlete: Athlete }) {
-  const { Link } = { Link: ({ to, className, children }: { to: string; className?: string; children: React.ReactNode }) => <a href={to} className={className}>{children}</a> }
-
   return (
     <a href={`/athletes/${athlete.id}`} className="card flex items-center gap-4 p-4 hover:border-olympic-blue border transition-colors">
       <img

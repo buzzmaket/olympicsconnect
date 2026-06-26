@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import { X, Handshake } from 'lucide-react'
+import { X, Users } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { api } from '../lib/api'
 import type { InquiryForm } from '../lib/api'
@@ -63,7 +63,7 @@ export default function InquiryModal({ athleteId, athleteName, onClose }: Props)
 
         {success ? (
           <div className="p-8 text-center">
-            <Handshake size={56} className="mx-auto text-green-500 mb-4" />
+            <Users size={56} className="mx-auto text-green-500 mb-4" />
             <h3 className="text-lg font-bold text-dark mb-2">הפנייה נשלחה בהצלחה!</h3>
             <p className="text-gray-500 text-sm">{t('inquiry.success')}</p>
             <button onClick={onClose} className="btn-primary mt-6">סגור</button>

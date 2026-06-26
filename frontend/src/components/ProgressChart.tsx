@@ -33,7 +33,8 @@ export default function ProgressChart({ achievements }: Props) {
             tick={{ fontSize: 11 }}
           />
           <Tooltip
-            formatter={(_, __, props) => [props.payload.competition, '']}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            formatter={(_: any, __: any, props: any) => [props.payload.competition, '']}
             labelFormatter={(l) => `שנת ${l}`}
           />
           <Line

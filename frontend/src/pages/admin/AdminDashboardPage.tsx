@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Users, Inbox, Handshake, Clock, CheckCircle, XCircle, Download } from 'lucide-react'
+import { Users, Inbox, Clock, CheckCircle, XCircle, Download } from 'lucide-react'
 import { DEMO_ATHLETES } from '../../lib/demoData'
 import StatusBadge from '../../components/StatusBadge'
 import VerifiedBadge from '../../components/VerifiedBadge'
@@ -33,7 +33,7 @@ export default function AdminDashboardPage() {
   const stats = [
     { icon: Users, value: DEMO_ATHLETES.length, label: t('admin.stats.activeAthletes'), color: 'text-olympic-blue', bg: 'bg-blue-50' },
     { icon: Inbox, value: DEMO_INQUIRIES.filter((i) => i.status === 'new').length, label: t('admin.stats.newInquiries'), color: 'text-yellow-600', bg: 'bg-yellow-50' },
-    { icon: Handshake, value: 3, label: t('admin.stats.activeSponsors'), color: 'text-green-600', bg: 'bg-green-50' },
+    { icon: Users, value: 3, label: t('admin.stats.activeSponsors'), color: 'text-green-600', bg: 'bg-green-50' },
     { icon: Clock, value: DEMO_ATHLETES.filter((a) => !a.is_verified).length, label: t('admin.stats.pendingApproval'), color: 'text-orange-600', bg: 'bg-orange-50' },
   ]
 

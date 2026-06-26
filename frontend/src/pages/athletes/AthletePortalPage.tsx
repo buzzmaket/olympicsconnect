@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import { Camera, Plus, Eye, Save, Trophy } from 'lucide-react'
+import { Camera, Plus, Eye, Save } from 'lucide-react'
 import { DEMO_ATHLETES } from '../../lib/demoData'
 import MedalBadge from '../../components/MedalBadge'
 

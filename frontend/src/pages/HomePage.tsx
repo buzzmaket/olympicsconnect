@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useQuery } from '@tanstack/react-query'
-import { Handshake, Trophy, Users, Activity } from 'lucide-react'
+import { Trophy, Users, Activity } from 'lucide-react'
 import { api } from '../lib/api'
 import AthleteCard from '../components/AthleteCard'
 import { DEMO_ATHLETES } from '../lib/demoData'
@@ -21,7 +21,7 @@ export default function HomePage() {
     { icon: Users, value: '234', label: t('home.stats.athletes') },
     { icon: Trophy, value: '48', label: t('home.stats.medals') },
     { icon: Activity, value: '12', label: t('home.stats.sports') },
-    { icon: Handshake, value: '26', label: t('home.stats.sponsors') },
+    { icon: Users, value: '26', label: t('home.stats.sponsors') },
   ]
 
   return (
@@ -89,7 +89,7 @@ export default function HomePage() {
       {/* Sponsor CTA */}
       <section className="bg-olympic-lightblue py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Handshake size={48} className="mx-auto text-olympic-blue mb-4" />
+          <Users size={48} className="mx-auto text-olympic-blue mb-4" />
           <h2 className="text-3xl font-bold text-dark mb-3">{t('home.sponsorCta.title')}</h2>
           <p className="text-gray-600 max-w-xl mx-auto mb-8">{t('home.sponsorCta.description')}</p>
           <Link to="/athletes" className="btn-primary text-base px-10 py-3">

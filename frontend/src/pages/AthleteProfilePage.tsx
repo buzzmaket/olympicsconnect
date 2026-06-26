@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { MapPin, ChevronRight, Handshake, Instagram, Facebook, Mail } from 'lucide-react'
+import { ChevronRight, Users, Instagram, Facebook, Mail } from 'lucide-react'
 import { DEMO_ATHLETES } from '../lib/demoData'
 import MedalBadge from '../components/MedalBadge'
 import StatusBadge from '../components/StatusBadge'
@@ -81,7 +81,7 @@ export default function AthleteProfilePage() {
                 onClick={() => setShowInquiry(true)}
                 className="btn-primary w-full flex items-center justify-center gap-2"
               >
-                <Handshake size={16} />
+                <Users size={16} />
                 {t('profile.contact')}
               </button>
             </div>
@@ -122,7 +122,7 @@ export default function AthleteProfilePage() {
 
           {/* Collaborate CTA */}
           <div className="bg-olympic-blue rounded-xl p-5 text-white">
-            <Handshake size={32} className="mb-2 text-olympic-gold" />
+            <Users size={32} className="mb-2 text-olympic-gold" />
             <h3 className="font-bold mb-1">{t('profile.collaborate')}</h3>
             <p className="text-blue-100 text-sm mb-4">{t('profile.collaborateDesc')}</p>
             <button
